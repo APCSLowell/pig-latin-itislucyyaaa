@@ -6,7 +6,7 @@ public class PigLatin {
     
     public void tester() {
         // String[] lines = loadStrings("words.txt");
-        String[] lines = new String[8]; 
+        String[] lines = {"beast","dough","happy","question","star","three","eagle","try"}; 
         try{
             File myFile = new File("words.txt");
             Scanner myReader = new Scanner(myFile);
