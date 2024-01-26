@@ -6,7 +6,7 @@ public class PigLatin {
     
     public void tester() {
         // String[] lines = loadStrings("words.txt");
-        String[] lines = {"beast","dough","happy","question","star","three","eagle","try"}; 
+        String[] lines = new String[8]; 
         try{
             File myFile = new File("words.txt");
             Scanner myReader = new Scanner(myFile);
@@ -22,10 +22,10 @@ public class PigLatin {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
-      System.out.println("there are " + lines.length + " lines");
-      for (int i = 0 ; i < lines.length; i++) {
-          System.out.println(pigLatin(lines[i]));
-      }
+	    System.out.println("there are " + lines.length + " lines");
+	    for (int i = 0 ; i < lines.length; i++) {
+	        System.out.println(pigLatin(lines[i]));
+	    }
     }
     public int findFirstVowel(String sWord)
     //precondition: sWord is a valid String of length greater than 0.
